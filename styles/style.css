@@ -19,8 +19,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  position: relative;
+  align-items: flex-start;
 }
 
 .logo {
@@ -148,11 +147,11 @@
 }
 
 .event-info__icon_type_calendar {
-  background-image: url(/images/icon_calendar.svg);
+  background-image: url(../images/icon_calendar.svg);
 }
 
 .event-info__icon_type_pin {
-  background-image: url(/images/icon_pin.svg);
+  background-image: url(../images/icon_pin.svg);
 }
 
 .event-info__text {
@@ -249,7 +248,7 @@
 
 .staff {
   padding: 100px 0 140px;
-  background-image: url(/images/staff_picks_background.jpg);
+  background-image: url(../images/staff_picks_background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -410,6 +409,7 @@
 
 .about__paragraph:last-child {
   text-indent: 0;
+  margin-bottom: 0;
 }
 
 .about__circle {
@@ -494,4 +494,7 @@
   color: rgb(225, 225, 225);
   position: relative;
   padding-left: 80px;
+  padding-top: 108px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
