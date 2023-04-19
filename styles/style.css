@@ -20,6 +20,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -52,6 +53,8 @@
   font-weight: 500;
   margin-top: 150px;
   margin-bottom: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .header__description {
@@ -59,6 +62,9 @@
   font-size: 20px;
   line-height: 30px;
   margin-top: 32px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .header__image {
@@ -101,6 +107,7 @@
   align-items: start;
   justify-content: space-between;
   box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 
 .events__content {
@@ -141,11 +148,11 @@
 }
 
 .event-info__icon_type_calendar {
-  background-image: url(../images/icon_calendar.svg);
+  background-image: url(/images/icon_calendar.svg);
 }
 
 .event-info__icon_type_pin {
-  background-image: url(../images/icon_pin.svg);
+  background-image: url(/images/icon_pin.svg);
 }
 
 .event-info__text {
@@ -243,7 +250,7 @@
 .staff {
   padding: 100px 0 140px;
   background-image: url(/images/staff_picks_background.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -280,7 +287,7 @@
 .card {
   background-color: #fff;
   border-radius: 6px;
-  padding: 32px 40px 20px;
+  padding: 32px 40px 20px 32px;
   box-sizing: border-box;
   margin-top: auto;
   height: 420px;
@@ -401,6 +408,10 @@
   margin: 0 0 32px;
 }
 
+.about__paragraph:last-child {
+  text-indent: 0;
+}
+
 .about__circle {
   position: absolute;
   background-color: #2f80ed;
@@ -413,7 +424,7 @@
 
 .footer {
   box-sizing: border-box;
-  background-color: #000000;
+  background-color: #1f1f1f;
   font-size: 16px;
   line-height: 20px;
   color: white;
@@ -425,7 +436,7 @@
 .footer__columns {
   display: flex;
   flex-direction: row;
-  /* /*justify-content: space-between; */
+  /*justify-content: space-between; */
   flex-wrap: wrap;
   position: relative;
   flex-basis: auto;
@@ -463,16 +474,20 @@
   margin-bottom: 20px;
 }
 
+.footer__column-link {
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
 .footer__column-link:hover {
   color: #c1c1c1;
-
-  text-decoration: none;
 }
 
 .footer__social-icon {
   width: 16px;
   height: 16px;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .footer__copyright {
